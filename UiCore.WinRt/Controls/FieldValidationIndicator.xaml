@@ -1,0 +1,21 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+										xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:mtControls="using:Mt.Common.UiCore.Controls">
+
+	<Style TargetType="mtControls:FieldValidationIndicator">
+		<Setter Property="VerticalAlignment"
+						Value="Center" />
+		<Setter Property="HorizontalAlignment"
+						Value="Left" />
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="mtControls:FieldValidationIndicator">
+					<ContentPresenter Foreground="Red"
+														FontSize="{StaticResource ControlContentThemeFontSize}"
+														FontFamily="{StaticResource ContentControlThemeFontFamily}"/>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+</ResourceDictionary>

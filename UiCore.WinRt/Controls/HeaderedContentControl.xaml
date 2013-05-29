@@ -1,0 +1,45 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+										xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:mtControls="using:Mt.Common.UiCore.Controls">
+
+	<Style TargetType="mtControls:HeaderedContentControl"
+				 x:Key="DefaultHeaderedContentControlStyle">
+		<Setter Property="Foreground"
+						Value="#FF000000" />
+		<!-- <Setter Property="FontSize" Value="11" /> -->
+		<Setter Property="HorizontalContentAlignment"
+						Value="Left" />
+		<Setter Property="VerticalContentAlignment"
+						Value="Top" />
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="mtControls:HeaderedContentControl">
+					<Grid>
+
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="*" />
+						</Grid.RowDefinitions>
+
+						<ContentPresenter Grid.Row="0"
+															Content="{TemplateBinding Header}"
+															ContentTemplate="{TemplateBinding HeaderTemplate}"
+															Margin="{TemplateBinding Padding}"
+															HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+															VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+						<ContentPresenter Grid.Row="1"
+															Content="{TemplateBinding Content}"
+															ContentTemplate="{TemplateBinding ContentTemplate}"
+															Margin="{TemplateBinding Padding}"
+															HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+															VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	
+	<!-- Implicit style -->
+	<Style TargetType="mtControls:HeaderedContentControl"
+				 BasedOn="{StaticResource DefaultHeaderedContentControlStyle}"/>
+</ResourceDictionary>

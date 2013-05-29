@@ -1,0 +1,11 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+										xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="ms-appx:///UiCore.WinRt/Controls/HeaderedContentControl.xaml" />
+		<ResourceDictionary Source="ms-appx:///UiCore.WinRt/Controls/ColorHexagonPicker.xaml" />
+		<ResourceDictionary Source="ms-appx:///UiCore.WinRt/Controls/GroupBox.xaml" />
+		<ResourceDictionary Source="ms-appx:///UiCore.WinRt/Controls/FieldValidationIndicator.xaml" />
+		<ResourceDictionary Source="ms-appx:///UiCore.WinRt/Controls/TreeView/TreeView.xaml" />
+	</ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

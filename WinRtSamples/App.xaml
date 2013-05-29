@@ -1,0 +1,22 @@
+﻿<Application x:Class="Mt.WinRtSamples.App"
+						 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+						 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+						 RequestedTheme="Light">
+
+	<Application.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+
+				<!-- 
+                    Styles that define common aspects of the platform look and feel
+                    Required by Visual Studio project and item templates
+                 -->
+				<ResourceDictionary Source="Theme/StandardButtonStyles.xaml" />
+				<ResourceDictionary Source="Theme/StandardItemStyles.xaml" />
+				<ResourceDictionary Source="Theme/StandardTextStyles.xaml" />
+				<ResourceDictionary Source="Theme/Assets.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

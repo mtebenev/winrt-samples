@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2D4527D6-4679-487A-A410-17F47CD0A9B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mt.Common.UiCore</RootNamespace>
+    <AssemblyName>UiCore.WinRt</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AwaitableUi\EventAsync.cs" />
+    <Compile Include="AwaitableUi\ScrollViewerExtensions.cs" />
+    <Compile Include="AwaitableUi\StoryboardExtensions.cs" />
+    <Compile Include="Behaviors\AutoKeyboardFocusBehavior.cs" />
+    <Compile Include="Behaviors\ControlStoryboardAction.cs" />
+    <Compile Include="Behaviors\ControlStoryboardOption.cs" />
+    <Compile Include="Behaviors\TreeViewSelectionBehavior.cs" />
+    <Compile Include="Behaviors\WebViewAsyncOperationContextBehavior.cs" />
+    <Compile Include="Behaviors\WebViewLoadedToCommandBehavior.cs" />
+    <Compile Include="Behaviors\UpdateLayoutBehavior.cs" />
+    <Compile Include="Behaviors\KeyValueDisplayBehavior.cs" />
+    <Compile Include="Behaviors\ListViewItemClickToCommandBehavior.cs" />
+    <Compile Include="Behaviors\FrameNavigatorBehavior.cs" />
+    <Compile Include="Behaviors\GoToStateAction.cs" />
+    <Compile Include="Behaviors\GridViewSelectionTransformBehavior.cs" />
+    <Compile Include="Behaviors\ToggleGridLayoutBehavior.cs" />
+    <Compile Include="Behaviors\WebViewBindableContentBehavior.cs" />
+    <Compile Include="Controls\ColorBaseControl.cs" />
+    <Compile Include="Controls\ColorHexagonPicker %28Windows Store%29.cs" />
+    <Compile Include="Controls\ColorHexagonPicker.cs" />
+    <Compile Include="Controls\DataTemplateExtensions.cs" />
+    <Compile Include="Controls\FieldValidationIndicator.cs" />
+    <Compile Include="Controls\GroupBox.cs" />
+    <Compile Include="Controls\HeaderedContentControl.cs" />
+    <Compile Include="Controls\HeaderedItemsControl.cs" />
+    <Compile Include="Controls\HierarchicalDataTemplate.cs" />
+    <Compile Include="Controls\InteractionHelper.cs" />
+    <Compile Include="Controls\ItemsControlHelper.cs" />
+    <Compile Include="Controls\IUpdateVisualState.cs" />
+    <Compile Include="Controls\LayoutAwarePage.cs" />
+    <Compile Include="Controls\OrientedSize.cs" />
+    <Compile Include="Controls\PropertyChangedEventHandler.cs" />
+    <Compile Include="Controls\PropertyChangeEventSource.cs" />
+    <Compile Include="Controls\ScrollExtensions.cs" />
+    <Compile Include="Controls\ScrollViewerExtensions.cs" />
+    <Compile Include="Controls\SquareContentControl.cs" />
+    <Compile Include="Controls\TreeView\TreeView.cs" />
+    <Compile Include="Controls\TreeView\TreeViewAutomationPeer.cs" />
+    <Compile Include="Controls\TreeView\TreeViewItem.cs" />
+    <Compile Include="Controls\TreeView\TreeViewItemAutomationPeer.cs" />
+    <Compile Include="Controls\UniformGrid.cs" />
+    <Compile Include="Controls\VisualStates.cs" />
+    <Compile Include="Controls\WrapPanel.cs" />
+    <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Converters\ColorToBrushConverter.cs" />
+    <Compile Include="Converters\EnumKeyToValueConverter.cs" />
+    <Compile Include="Converters\EnumToBooleanConverter.cs" />
+    <Compile Include="Converters\EnumToVisibilityConverter.cs" />
+    <Compile Include="Converters\KeyToValueConverter.cs" />
+    <Compile Include="Converters\NotConverter.cs" />
+    <Compile Include="Core\GenericDataTemplateSelector.cs" />
+    <Compile Include="Core\IncrementalLoadCollection.cs" />
+    <Compile Include="Core\LocalizationUtils.cs" />
+    <Compile Include="MvvmCore\DataContextChangedHelper.cs" />
+    <Compile Include="MvvmCore\INavigationService.cs" />
+    <Compile Include="MvvmCore\NavigationServiceFrame.cs" />
+    <Compile Include="MvvmCore\NavigableAttribute.cs" />
+    <Compile Include="MvvmCore\NavigableViewModelBase.cs" />
+    <Compile Include="MvvmCore\Validation.cs" />
+    <Compile Include="Platform\DependencyObjectCollection.cs" />
+    <Compile Include="Platform\DispatcherUtils.cs" />
+    <Compile Include="Platform\ExtendedVisualStateManager.cs" />
+    <Compile Include="Platform\ExtendedVisualStateManagerExtenstions.cs" />
+    <Compile Include="Platform\VisualTreeEnumerator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppCore.Portable\AppCore.Portable.csproj">
+      <Project>{1CEF880C-4048-4C5F-8E9A-EC5DF3FD7ED1}</Project>
+      <Name>AppCore.Portable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppCore.WinRt\AppCore.WinRt.csproj">
+      <Project>{3C7FB7BD-E0E3-4E88-99AE-18A93E6E6D3F}</Project>
+      <Name>AppCore.WinRt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UiCore.Portable\UiCore.Portable.csproj">
+      <Project>{73A8CAFB-CD3D-4FB0-88B7-13E6D19BA5CC}</Project>
+      <Name>UiCore.Portable</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\ColorHexagonPicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Controls\FieldValidationIndicator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Controls\GroupBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Controls\HeaderedContentControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Controls\TreeView\TreeView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\TreeView\TreeViewItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\TreeView\TreeViewMouse.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\TreeView\TreeViewTouch.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Assets.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\IconButtonStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Icons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Themes\SdkStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StandardAppBarStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StandardButtonStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StandardItemStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StandardTextStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Windows.UI.Interactivity">
+      <HintPath>..\packages\Windows.UI.Interactivity.1.3.0.0\lib\win8\Windows.UI.Interactivity.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

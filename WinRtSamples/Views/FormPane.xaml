@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="Mt.WinRtSamples.Views.FormPane"
+						 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+						 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+						 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mvvmCore="using:Mt.Common.WinRtUiCore.MvvmCore" 
+						 xmlns:coreControls="using:Mt.Common.UiCore.Controls"
+             mc:Ignorable="d"
+						 d:DesignHeight="300"
+						 d:DesignWidth="400">
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto" />
+			<ColumnDefinition Width="200" />
+			<ColumnDefinition Width="Auto" />
+		</Grid.ColumnDefinitions>
+
+		<!-- First name -->
+		<TextBlock Grid.Row="0"
+							 Grid.Column="0"
+							 Margin="5"
+							 Text="First name:" />
+
+		<TextBox Grid.Row="0"
+						 Grid.Column="1"
+						 Margin="5"
+						 Text="{Binding FirstName, Mode=TwoWay}"
+						 mvvmCore:Validation.Property="FirstName"
+						 mvvmCore:Validation.ValidationPlaceholder="{Binding ElementName=FirstNameValidationIndicator}"
+						 mvvmCore:Validation.DataContext="{Binding}" />
+
+		<coreControls:FieldValidationIndicator Grid.Row="0"
+																					 Grid.Column="2"
+																					 x:Name="FirstNameValidationIndicator"/>
+		
+
+		<!-- Last name -->
+		<TextBlock Grid.Row="1"
+							 Grid.Column="0"
+							 Margin="5"
+							 Text="Last name:" />
+
+		<TextBox Grid.Row="1"
+						 Grid.Column="1"
+						 Text="{Binding LastName, Mode=TwoWay}"
+						 Margin="5"
+						 mvvmCore:Validation.Property="LastName"
+						 mvvmCore:Validation.ValidationPlaceholder="{Binding ElementName=LastNameValidationIndicator}"
+						 mvvmCore:Validation.DataContext="{Binding}" />
+
+		<coreControls:FieldValidationIndicator Grid.Row="1"
+																					 Grid.Column="2"
+																					 x:Name="LastNameValidationIndicator" />
+
+		<!-- Age -->
+		<TextBlock Grid.Row="2"
+							 Grid.Column="0"
+							 Margin="5"
+							 Text="Age:" />
+
+		<TextBox Grid.Row="2"
+						 Grid.Column="1"
+						 Text="{Binding Age, Mode=TwoWay}"
+						 
+						 Margin="5"
+						 mvvmCore:Validation.Property="Age"
+						 mvvmCore:Validation.ValidationPlaceholder="{Binding ElementName=AgeValidationIndicator}"
+						 mvvmCore:Validation.DataContext="{Binding}" />
+
+		<coreControls:FieldValidationIndicator Grid.Row="2"
+																					 Grid.Column="2"
+																					 x:Name="AgeValidationIndicator" />
+
+	</Grid>
+</UserControl>
