@@ -7,7 +7,7 @@ namespace Mt.WinRtSamples.ViewModels
 	/// <summary>
 	/// View model for validation sample (aggregates form)
 	/// </summary>
-	[Navigable(typeof(ValidationView))]
+	[Navigable(typeof(ValidationPage))]
 	public class ValidationViewModel : DemoViewModelBase
 	{
 		private readonly FormPaneModel _formModel;

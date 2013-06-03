@@ -37,6 +37,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\FakeAttributes.cs" />
+    <Compile Include="Core\IStringResourceLoader.cs" />
+    <Compile Include="Core\StringsManager.cs" />
     <Compile Include="Money\Currency.cs" />
     <Compile Include="Money\FractionReceivers.cs" />
     <Compile Include="Money\MersenneTwister.cs" />

@@ -15,6 +15,7 @@
 				<ResourceDictionary Source="Theme/StandardItemStyles.xaml" />
 				<ResourceDictionary Source="Theme/StandardTextStyles.xaml" />
 				<ResourceDictionary Source="Theme/Assets.xaml" />
+				<ResourceDictionary Source="ms-appx:///UiCore.WinRt/Themes/StandardAppBarStyles.xaml"/>
 			</ResourceDictionary.MergedDictionaries>
 
 		</ResourceDictionary>

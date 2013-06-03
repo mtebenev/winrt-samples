@@ -3,7 +3,7 @@ using Mt.WinRtSamples.Views;
 
 namespace Mt.WinRtSamples.ViewModels
 {
-	[Navigable(typeof(LayoutBehaviorView))]
+	[Navigable(typeof(LayoutBehaviorPage))]
 	public class LayoutBehaviorViewModel : DemoViewModelBase
 	{
 		public override string Title

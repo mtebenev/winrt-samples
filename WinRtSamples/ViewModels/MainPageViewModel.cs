@@ -21,7 +21,8 @@ namespace Mt.WinRtSamples.ViewModels
 					{
 						new LayoutBehaviorViewModel(),
 						new ValidationViewModel(),
-						new IncrementalSourceViewModel()
+						new IncrementalSourceViewModel(),
+						new AppBarViewCommandsViewModel()
 					};
 
 			NavigateCommand = new DelegateCommand<DemoViewModelBase>(HandleNavigateCommand);

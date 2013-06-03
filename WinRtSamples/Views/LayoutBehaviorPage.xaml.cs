@@ -5,9 +5,9 @@ namespace Mt.WinRtSamples.Views
 	/// <summary>
 	/// Demonstrates behavior updating view on layout change
 	/// </summary>
-	public sealed partial class LayoutBehaviorView : Page
+	public sealed partial class LayoutBehaviorPage : Page
 	{
-		public LayoutBehaviorView()
+		public LayoutBehaviorPage()
 		{
 			this.InitializeComponent();
 		}

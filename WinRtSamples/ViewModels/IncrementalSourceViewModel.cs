@@ -7,7 +7,7 @@ using Mt.WinRtSamples.Views;
 
 namespace Mt.WinRtSamples.ViewModels
 {
-	[Navigable(typeof(IncrementalSourceView))]
+	[Navigable(typeof(IncrementalSourcePage))]
 	public class IncrementalSourceViewModel : DemoViewModelBase
 	{
 		private readonly IncrementalLoadCollection<int> _incrementalLoadNumbers;

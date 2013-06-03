@@ -3,7 +3,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 
-namespace Mt.Common.WinRtUiCore.Platform
+namespace Mt.Common.UiCore.Platform
 {
 	/// <summary>
 	/// Enumerates a visual tree and applies specified action on a certain nodes
@@ -171,15 +171,13 @@ namespace Mt.Common.WinRtUiCore.Platform
 			}
 
 			if(resourceObj == null)
-			{
 				resourceObj = Application.Current.Resources[key];
-			}
 
 			T resource = default(T);
+
 			if(resourceObj != null)
-			{
-				resource = (T)resourceObj;
-			}
+				resource = (T) resourceObj;
+
 			return resource;
 		}
 
@@ -195,9 +193,8 @@ namespace Mt.Common.WinRtUiCore.Platform
 
 			FrameworkElement frameworkElement = node as FrameworkElement;
 			if(frameworkElement != null)
-			{
 				parent = frameworkElement.Parent;
-			}
+
 			return parent;
 		}
 

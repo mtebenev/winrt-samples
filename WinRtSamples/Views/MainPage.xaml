@@ -12,6 +12,15 @@
 		<viewModels:MainPageViewModel/>
 	</Page.DataContext>
 	
+	<Page.BottomAppBar>
+		<AppBar>
+			<StackPanel Orientation="Horizontal"
+									HorizontalAlignment="Right"
+									x:Name="ViewSpecificCommands">
+			</StackPanel>
+		</AppBar>
+	</Page.BottomAppBar>
+
 	<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
 		<Grid.ColumnDefinitions>

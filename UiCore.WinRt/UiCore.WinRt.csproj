@@ -106,6 +106,7 @@
     <Compile Include="Behaviors\ControlStoryboardAction.cs" />
     <Compile Include="Behaviors\ControlStoryboardOption.cs" />
     <Compile Include="Behaviors\TreeViewSelectionBehavior.cs" />
+    <Compile Include="Behaviors\ViewSpecificCommandsBehavior.cs" />
     <Compile Include="Behaviors\WebViewAsyncOperationContextBehavior.cs" />
     <Compile Include="Behaviors\WebViewLoadedToCommandBehavior.cs" />
     <Compile Include="Behaviors\UpdateLayoutBehavior.cs" />
@@ -151,7 +152,6 @@
     <Compile Include="Converters\NotConverter.cs" />
     <Compile Include="Core\GenericDataTemplateSelector.cs" />
     <Compile Include="Core\IncrementalLoadCollection.cs" />
-    <Compile Include="Core\LocalizationUtils.cs" />
     <Compile Include="MvvmCore\DataContextChangedHelper.cs" />
     <Compile Include="MvvmCore\INavigationService.cs" />
     <Compile Include="MvvmCore\NavigationServiceFrame.cs" />

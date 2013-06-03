@@ -99,7 +99,15 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <ProjectReference Include="..\AppCore.Portable\AppCore.Portable.csproj">
+      <Project>{1CEF880C-4048-4C5F-8E9A-EC5DF3FD7ED1}</Project>
+      <Name>AppCore.Portable</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Core\AppSettingsManager.cs" />
+    <Compile Include="Core\LocalizationUtils.cs" />
     <Compile Include="Core\WcfClientBase.cs" />
     <Compile Include="Imaging\ColorExtensions.cs" />
     <Compile Include="Imaging\ColorSpace.cs" />

@@ -114,13 +114,17 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\AppBarViewCommandsViewModel.cs" />
     <Compile Include="ViewModels\IncrementalSourceViewModel.cs" />
     <Compile Include="ViewModels\FormPaneModel.cs" />
+    <Compile Include="Views\AppBarViewCommandsPage.xaml.cs">
+      <DependentUpon>AppBarViewCommandsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\FormPane.xaml.cs">
       <DependentUpon>FormPane.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\IncrementalSourceView.xaml.cs">
-      <DependentUpon>IncrementalSourceView.xaml</DependentUpon>
+    <Compile Include="Views\IncrementalSourcePage.xaml.cs">
+      <DependentUpon>IncrementalSourcePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -130,11 +134,11 @@
     <Compile Include="ViewModels\LayoutBehaviorViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="ViewModels\ValidationViewModel.cs" />
-    <Compile Include="Views\LayoutBehaviorView.xaml.cs">
-      <DependentUpon>LayoutBehaviorView.xaml</DependentUpon>
+    <Compile Include="Views\LayoutBehaviorPage.xaml.cs">
+      <DependentUpon>LayoutBehaviorPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ValidationView.xaml.cs">
-      <DependentUpon>ValidationView.xaml</DependentUpon>
+    <Compile Include="Views\ValidationPage.xaml.cs">
+      <DependentUpon>ValidationPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -171,11 +175,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Views\AppBarViewCommandsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\FormPane.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\IncrementalSourceView.xaml">
+    <Page Include="Views\IncrementalSourcePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -183,11 +191,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\LayoutBehaviorView.xaml">
+    <Page Include="Views\LayoutBehaviorPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\ValidationView.xaml">
+    <Page Include="Views\ValidationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
