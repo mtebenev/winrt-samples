@@ -15,11 +15,25 @@
 	<i:Interaction.Behaviors>
 		<coreBehaviors:ViewSpecificCommandsBehavior>
 			<coreBehaviors:ViewSpecificCommandsBehavior.CommandGroups>
+				<!-- ViewSpecificCommands items group -->
 				<coreBehaviors:AppBarCommandGroup Name="ViewSpecificCommands">
 					<Button Style="{StaticResource PlayAppBarButtonStyle}"
 									Command="{Binding Path=ViewSpecificCommand1, Mode=OneWay}"/>
-					<Button Style="{StaticResource PauseAppBarButtonStyle}"
-									Command="{Binding Path=ViewSpecificCommand2, Mode=OneWay}" />
+					
+					<!-- The second button uses behavior to display flyout on click -->
+					<Button Style="{StaticResource PauseAppBarButtonStyle}">
+						<i:Interaction.Behaviors>
+							<coreBehaviors:ButtonFlyoutBehavior>
+								<StackPanel>
+									<Button Content="Command 1"
+													Command="{Binding Path=ViewSpecificCommand1, Mode=OneWay}" />
+
+									<Button Content="Command 2"
+													Command="{Binding Path=ViewSpecificCommand2, Mode=OneWay}" />
+								</StackPanel>
+							</coreBehaviors:ButtonFlyoutBehavior>
+						</i:Interaction.Behaviors>
+					</Button>
 				</coreBehaviors:AppBarCommandGroup>
 				
 			</coreBehaviors:ViewSpecificCommandsBehavior.CommandGroups>

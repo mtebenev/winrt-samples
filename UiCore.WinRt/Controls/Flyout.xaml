@@ -1,0 +1,160 @@
+<!--?
+Copyright (c) 2012 Tim Heuer
+
+Licensed under the Microsoft Public License (Ms-PL) (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://opensource.org/licenses/Ms-PL.html
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.-->
+
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+										xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="using:Mt.Common.UiCore.Controls">
+
+	<ResourceDictionary.ThemeDictionaries>
+		<ResourceDictionary x:Key="Default">
+			<SolidColorBrush x:Key="FlyoutBorderBrush">#FF212121</SolidColorBrush>
+			<SolidColorBrush x:Key="FlyoutBackgroundBrush">#FFFFFFFF</SolidColorBrush>
+			<SolidColorBrush x:Key="MenuBorderBrush">#FF212121</SolidColorBrush>
+			<SolidColorBrush x:Key="MenuBackgroundBrush">#FFFFFFFF</SolidColorBrush>
+			<SolidColorBrush x:Key="MenuItemBaseTextBrush">#FF000000</SolidColorBrush>
+			<SolidColorBrush x:Key="MenuItemBaseBackgroundBrush">#FFFFFFFF</SolidColorBrush>
+			<SolidColorBrush x:Key="MenuItemHoverBrush">#FFDEDEDE</SolidColorBrush>
+			<SolidColorBrush x:Key="MenuItemPressedBrush">#FF000000</SolidColorBrush>
+			<SolidColorBrush x:Key="MenuItemPressedTextBrush">#FFFFFFFF</SolidColorBrush>
+			<SolidColorBrush x:Key="MenuItemHoverTextBrush">#FF000000</SolidColorBrush>
+			<SolidColorBrush x:Key="MenuSeparatorStrokeBrush">#FF707070</SolidColorBrush>
+			<SolidColorBrush x:Key="SettingsFlyoutHeaderBackgroundBrush">#FF000000</SolidColorBrush>
+			<SolidColorBrush x:Key="SettingsFlyoutContentBackgroundThemeBrush">#FFFFFFFF</SolidColorBrush>
+			<SolidColorBrush x:Key="SettingsFlyoutContentForegroundThemeBrush">#FF000000</SolidColorBrush>
+			<SolidColorBrush x:Key="RatingItemForegroundThemeBrush">#FF5B2EC5</SolidColorBrush>
+			<SolidColorBrush x:Key="RatingItemPointerOverThemeBrush">#FF8152EF</SolidColorBrush>
+			<SolidColorBrush x:Key="RatingItemPointerPressedThemeBrush">#FF8152EF</SolidColorBrush>
+			<SolidColorBrush x:Key="RatingItemBackgroundThemeBrush">#59FFFFFF</SolidColorBrush>
+			<SolidColorBrush x:Key="RatingItemDisabledForegroundThemeBrush">#FFFFFFFF</SolidColorBrush>
+			<SolidColorBrush x:Key="RatingItemBorderThemeBrush">Transparent</SolidColorBrush>
+			<x:String x:Key="SettingsFlyoutBackButtonGlyph">&#xE0BA;</x:String>
+			<SolidColorBrush x:Key="FlipViewIndicatorUnselectedThemeBrush">Gray</SolidColorBrush>
+			<SolidColorBrush x:Key="FlipViewIndicatorSelectedThemeBrush">#FFFFFFFF</SolidColorBrush>
+			<x:Double x:Key="CustomDialogBorderThemeThickness">0</x:Double>
+			<SolidColorBrush x:Key="CustomDialogBorderThemeBrush">#FFFFFFFF</SolidColorBrush>
+			<SolidColorBrush x:Key="CustomDialogBackgroundThemeBrush">#FFFFFFFF</SolidColorBrush>
+		</ResourceDictionary>
+		<ResourceDictionary x:Key="Light">
+			<SolidColorBrush x:Key="FlyoutBorderBrush">#FF212121</SolidColorBrush>
+			<SolidColorBrush x:Key="FlyoutBackgroundBrush">#FFFFFFFF</SolidColorBrush>
+			<SolidColorBrush x:Key="MenuBorderBrush">#FF212121</SolidColorBrush>
+			<SolidColorBrush x:Key="MenuBackgroundBrush">#FFFFFFFF</SolidColorBrush>
+			<SolidColorBrush x:Key="MenuItemBaseTextBrush">#FF000000</SolidColorBrush>
+			<SolidColorBrush x:Key="MenuItemBaseBackgroundBrush">#FFFFFFFF</SolidColorBrush>
+			<SolidColorBrush x:Key="MenuItemHoverBrush">#FFDEDEDE</SolidColorBrush>
+			<SolidColorBrush x:Key="MenuItemPressedBrush">#FF000000</SolidColorBrush>
+			<SolidColorBrush x:Key="MenuItemPressedTextBrush">#FFFFFFFF</SolidColorBrush>
+			<SolidColorBrush x:Key="MenuItemHoverTextBrush">#FF000000</SolidColorBrush>
+			<SolidColorBrush x:Key="MenuSeparatorStrokeBrush">#FF707070</SolidColorBrush>
+			<SolidColorBrush x:Key="SettingsFlyoutHeaderBackgroundBrush">LightGray</SolidColorBrush>
+			<SolidColorBrush x:Key="SettingsFlyoutContentBackgroundThemeBrush">#FFFFFFFF</SolidColorBrush>
+			<SolidColorBrush x:Key="SettingsFlyoutContentForegroundThemeBrush">#FF000000</SolidColorBrush>
+			<SolidColorBrush x:Key="RatingItemForegroundThemeBrush">#FF4617B4</SolidColorBrush>
+			<SolidColorBrush x:Key="RatingItemPointerOverThemeBrush">#FF7241E4</SolidColorBrush>
+			<SolidColorBrush x:Key="RatingItemPointerPressedThemeBrush">#FF7241E4</SolidColorBrush>
+			<SolidColorBrush x:Key="RatingItemBackgroundThemeBrush">#59000000</SolidColorBrush>
+			<SolidColorBrush x:Key="RatingItemDisabledForegroundThemeBrush">#FF000000</SolidColorBrush>
+			<SolidColorBrush x:Key="RatingItemBorderThemeBrush">Transparent</SolidColorBrush>
+			<x:String x:Key="SettingsFlyoutBackButtonGlyph">&#xE0BA;</x:String>
+			<SolidColorBrush x:Key="FlipViewIndicatorUnselectedThemeBrush">Gray</SolidColorBrush>
+			<SolidColorBrush x:Key="FlipViewIndicatorSelectedThemeBrush">#FF000000</SolidColorBrush>
+			<x:Double x:Key="CustomDialogBorderThemeThickness">0</x:Double>
+			<SolidColorBrush x:Key="CustomDialogBorderThemeBrush">#FFFFFFFF</SolidColorBrush>
+			<SolidColorBrush x:Key="CustomDialogBackgroundThemeBrush">#FF000000</SolidColorBrush>
+		</ResourceDictionary>
+		<ResourceDictionary x:Key="HighContrast">
+			<SolidColorBrush x:Key="FlyoutBorderBrush"
+											 Color="{StaticResource SystemColorButtonTextColor}" />
+			<SolidColorBrush x:Key="FlyoutBackgroundBrush"
+											 Color="{StaticResource SystemColorButtonFaceColor}" />
+			<SolidColorBrush x:Key="MenuBorderBrush"
+											 Color="{StaticResource SystemColorButtonTextColor}" />
+			<SolidColorBrush x:Key="MenuBackgroundBrush"
+											 Color="{StaticResource SystemColorButtonFaceColor}" />
+			<SolidColorBrush x:Key="MenuItemBaseTextBrush"
+											 Color="{StaticResource SystemColorButtonTextColor}" />
+			<SolidColorBrush x:Key="MenuItemBaseBackgroundBrush"
+											 Color="{StaticResource SystemColorButtonFaceColor}" />
+			<SolidColorBrush x:Key="MenuItemHoverBrush"
+											 Color="{StaticResource SystemColorHighlightColor}" />
+			<SolidColorBrush x:Key="MenuItemPressedBrush">#FFFFFFFF</SolidColorBrush>
+			<SolidColorBrush x:Key="MenuItemPressedTextBrush"
+											 Color="{StaticResource SystemColorButtonFaceColor}" />
+			<SolidColorBrush x:Key="MenuItemHoverTextBrush"
+											 Color="{StaticResource SystemColorButtonTextColor}" />
+			<SolidColorBrush x:Key="MenuSeparatorStrokeBrush">#FFFFFFFF</SolidColorBrush>
+			<SolidColorBrush x:Key="SettingsFlyoutHeaderBackgroundBrush"
+											 Color="{StaticResource SystemColorButtonFaceColor}" />
+			<SolidColorBrush x:Key="SettingsFlyoutContentBackgroundThemeBrush"
+											 Color="{StaticResource SystemColorButtonFaceColor}" />
+			<SolidColorBrush x:Key="SettingsFlyoutContentForegroundThemeBrush"
+											 Color="{StaticResource SystemColorButtonTextColor}" />
+			<SolidColorBrush x:Key="RatingItemForegroundThemeBrush"
+											 Color="{StaticResource SystemColorHighlightColor}" />
+			<SolidColorBrush x:Key="RatingItemPointerOverThemeBrush"
+											 Color="{StaticResource SystemColorButtonTextColor}" />
+			<SolidColorBrush x:Key="RatingItemPointerPressedThemeBrush"
+											 Color="{StaticResource SystemColorButtonTextColor}" />
+			<SolidColorBrush x:Key="RatingItemBackgroundThemeBrush"
+											 Color="{StaticResource SystemColorButtonFaceColor}" />
+			<SolidColorBrush x:Key="RatingItemDisabledForegroundThemeBrush"
+											 Color="{StaticResource SystemColorButtonFaceColor}" />
+			<SolidColorBrush x:Key="RatingItemBorderThemeBrush"
+											 Color="{StaticResource SystemColorButtonTextColor}" />
+			<x:String x:Key="SettingsFlyoutBackButtonGlyph">&#xE0C4;</x:String>
+			<SolidColorBrush x:Key="FlipViewIndicatorUnselectedThemeBrush"
+											 Color="{StaticResource SystemColorButtonFaceColor}" />
+			<SolidColorBrush x:Key="FlipViewIndicatorSelectedThemeBrush"
+											 Color="{StaticResource SystemColorHighlightColor}" />
+			<x:Double x:Key="CustomDialogBorderThemeThickness">1</x:Double>
+			<SolidColorBrush x:Key="CustomDialogBorderThemeBrush">#FFFFFFFF</SolidColorBrush>
+			<SolidColorBrush x:Key="CustomDialogBackgroundThemeBrush"
+											 Color="{StaticResource SystemColorButtonFaceColor}" />
+		</ResourceDictionary>
+	</ResourceDictionary.ThemeDictionaries>
+
+	<x:String x:Key="SettingsFlyoutHeaderTextDefault">Application Setting</x:String>
+
+
+	<Style TargetType="local:Flyout">
+		<Setter Property="Background"
+						Value="{StaticResource FlyoutBackgroundBrush}" />
+		<Setter Property="BorderBrush"
+						Value="{StaticResource FlyoutBorderBrush}" />
+		<Setter Property="HostMargin"
+						Value="0,12,0,12" />
+		<Setter Property="MinHeight"
+						Value="54" />
+		<Setter Property="MinWidth"
+						Value="70" />
+		<Setter Property="MaxHeight"
+						Value="758" />
+		<Setter Property="MaxWidth"
+						Value="510" />
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="local:Flyout">
+					<Border Background="{TemplateBinding Background}"
+									BorderBrush="{TemplateBinding BorderBrush}"
+									BorderThickness="2"
+									Margin="{TemplateBinding HostMargin}">
+						<ContentPresenter Content="{TemplateBinding Content}"
+															Margin="{TemplateBinding Margin}" />
+					</Border>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+</ResourceDictionary>

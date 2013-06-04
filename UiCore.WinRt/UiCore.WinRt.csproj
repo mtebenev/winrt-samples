@@ -103,6 +103,7 @@
     <Compile Include="AwaitableUi\ScrollViewerExtensions.cs" />
     <Compile Include="AwaitableUi\StoryboardExtensions.cs" />
     <Compile Include="Behaviors\AutoKeyboardFocusBehavior.cs" />
+    <Compile Include="Behaviors\ButtonFlyoutBehavior.cs" />
     <Compile Include="Behaviors\ControlStoryboardAction.cs" />
     <Compile Include="Behaviors\ControlStoryboardOption.cs" />
     <Compile Include="Behaviors\TreeViewSelectionBehavior.cs" />
@@ -122,6 +123,7 @@
     <Compile Include="Controls\ColorHexagonPicker.cs" />
     <Compile Include="Controls\DataTemplateExtensions.cs" />
     <Compile Include="Controls\FieldValidationIndicator.cs" />
+    <Compile Include="Controls\Flyout.cs" />
     <Compile Include="Controls\GroupBox.cs" />
     <Compile Include="Controls\HeaderedContentControl.cs" />
     <Compile Include="Controls\HeaderedItemsControl.cs" />
@@ -186,6 +188,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Page>
     <Page Include="Controls\FieldValidationIndicator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Controls\Flyout.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -7,5 +7,6 @@
 		<ResourceDictionary Source="ms-appx:///UiCore.WinRt/Controls/GroupBox.xaml" />
 		<ResourceDictionary Source="ms-appx:///UiCore.WinRt/Controls/FieldValidationIndicator.xaml" />
 		<ResourceDictionary Source="ms-appx:///UiCore.WinRt/Controls/TreeView/TreeView.xaml" />
+		<ResourceDictionary Source="ms-appx:///UiCore.WinRt/Controls/Flyout.xaml" />
 	</ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
